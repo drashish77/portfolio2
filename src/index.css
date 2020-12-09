@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+.cursive {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 400;
+}
+
+.prose img {
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.home-name {
+    font-size: 6rem;
+}
