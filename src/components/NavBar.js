@@ -33,7 +33,7 @@ const NavBar = () => {
             About Me
           </NavLink>
         </nav>
-        <div className='inline-flex p-3 my-6'>
+        <div className='hidden md:inline-flex p-3 my-6'>
           <SocialIcon
             url='https://twitter.com/dr_coderr'
             className='mr-4'

@@ -16,14 +16,16 @@ const Project = () => {
   return (
     <main className='bg-gray-100 min-h-screen p-12'>
       <section className='container m-auto'>
-        <h1 className='text-5xl flex justify-center cursive'>My Projects</h1>
+        <h1 className='text-4xl md:text-5xl flex justify-center cursive'>
+          My Projects
+        </h1>
         <h2 className='text-lg text-green-600 flex justify-center mt-4 mb-12'>
           Welcome to my projects page!
         </h2>
-        <section className='grid grid-cols-2 gap-8'>
+        <section className='grid grid-cols-1 md:grid-cols-2 gap-8'>
           {projectData &&
             projectData.map((project, index) => (
-              <article className='relative rounded-lg shadow-xl bg-white p-16'>
+              <article className='relative rounded-lg shadow-xl bg-white p-6 md:p-16'>
                 <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
                   <a
                     href={project.link}
@@ -34,19 +36,21 @@ const Project = () => {
                     {project.title}
                   </a>
                 </h3>
-                <div className='text-gray-500 text-xs space-x-4'>
-                  <span className=''>
+                <div className='text-gray-500 text-xs md:flex md:justify-between'>
+                  <p className=''>
                     <strong className='font-bold'>Finished on</strong>:{' '}
                     {new Date(project.date).toLocaleDateString()}
-                  </span>
-                  <span className=''>
+                  </p>
+                  <p className=''>
                     <strong className='font-bold'>Company</strong>:{' '}
                     {project.place}
-                  </span>
-                  <span className=''>
+                  </p>
+                  <p className=''>
                     <strong className='font-bold'>Type</strong>:{' '}
                     {project.projectType}
-                  </span>
+                  </p>
+                </div>
+                <div className=''>
                   <p className='my-6 text-lg text-gray-700 leading-relaxed'>
                     {project.description}
                   </p>

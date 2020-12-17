@@ -14,6 +14,11 @@
     border-radius: 5px;
 }
 
-.home-name {
+
+/* .home-name {
     font-size: 6rem;
+} */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
