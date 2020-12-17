@@ -58,30 +58,32 @@ export default function Navbar({ fixed }) {
                   About Me
                 </NavLink>
               </li>
+              <li>
+                <div className='flex md:inline-flex p-0 mt-2 mb-4 md:p-3 md:my-6'>
+                  <SocialIcon
+                    url='https://twitter.com/dr_coderr'
+                    className='mr-4'
+                    target='_blank'
+                    fgColor='#fff'
+                    style={{ height: 25, width: 25 }}
+                  />
+                  <SocialIcon
+                    url='https://www.facebook.com/dr.ashishhh/'
+                    className='mr-4'
+                    target='_blank'
+                    fgColor='#fff'
+                    style={{ height: 25, width: 25 }}
+                  />
+                  <SocialIcon
+                    url='https://www.linkedin.com/in/ashishhh/'
+                    className='mr-4'
+                    target='_blank'
+                    fgColor='#fff'
+                    style={{ height: 25, width: 25 }}
+                  />
+                </div>
+              </li>
             </ul>
-            <div className='hidden lg:inline-flex p-3 my-6'>
-              <SocialIcon
-                url='https://twitter.com/dr_coderr'
-                className='mr-4'
-                target='_blank'
-                fgColor='#fff'
-                style={{ height: 35, width: 35 }}
-              />
-              <SocialIcon
-                url='https://www.facebook.com/dr.ashishhh/'
-                className='mr-4'
-                target='_blank'
-                fgColor='#fff'
-                style={{ height: 35, width: 35 }}
-              />
-              <SocialIcon
-                url='https://www.linkedin.com/in/ashishhh/'
-                className='mr-4'
-                target='_blank'
-                fgColor='#fff'
-                style={{ height: 35, width: 35 }}
-              />
-            </div>
           </div>
         </div>
       </nav>
